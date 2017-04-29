@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <LinearLayout
+    tools:context="com.example.android.courtcounter.MainActivity"
+    android:orientation="vertical" android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_weight="3">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_weight="1">
+
+    <TextView
+        style="@style/TeamAppearance"
+        android:text="team a"/>
+
+    <TextView
+        style="@style/ScoreAppearance"
+        android:text="@string/show_score"
+        android:id="@+id/team_a_score"/>
+
+    <Button
+        style="@style/ButtonAppearance"
+        android:text="@string/add_three"
+        android:onClick="addThreeForTeamA"/>
+
+    <Button
+        style="@style/ButtonAppearance"
+        android:text="@string/add_two"
+        android:onClick="addTwoForTeamA" />
+
+    <Button
+        style="@style/ButtonAppearance"
+        android:text="@string/free_throw"
+        android:onClick="freeThrowForTeamA" />
+
+</LinearLayout>
+
+    <View
+        android:layout_height="match_parent"
+        android:layout_width="1sp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/darker_gray"/>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_weight="1">
+
+    <TextView
+        style="@style/TeamAppearance"
+        android:text="team B"/>
+
+    <TextView
+        style="@style/ScoreAppearance"
+        android:text="@string/show_score"
+        android:id="@+id/team_b_score"/>
+
+    <Button
+        style="@style/ButtonAppearance"
+        android:text="@string/add_three"
+        android:onClick="addThreeForB" />
+
+    <Button
+        style="@style/ButtonAppearance"
+        android:text="@string/add_two"
+        android:onClick="addTwoForB" />
+
+    <Button
+        style="@style/ButtonAppearance"
+        android:text="@string/free_throw"
+        android:onClick="freeThrowForB" />
+
+</LinearLayout>
+
+</LinearLayout>
+
+    <Button
+        style="@style/ButtonAppearance"
+        android:text="@string/reset_button"
+        android:onClick="resetScore"/>
+
+</LinearLayout>
